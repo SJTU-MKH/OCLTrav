@@ -28,8 +28,14 @@
 <!-- This is the pytorch implementation of our paper IMOST at ICRA 2025. -->
 
 ![structure.png](./assets/structure.png)
-## Environment Setup
-Todo
+
+Based on the [wild_visual_navigation](https://github.com/leggedrobotics/wild_visual_navigation.git), we have expanded the online continual learning task for traversability. And we have deployed the algorithm on Unitree Go2 quadruped robot which is equipped with a [LIVOX MID-360](https://www.livoxtech.com/cn/mid-360) LiDAR and a [depth camera D435i](https://www.intelrealsense.com/depth-camera-d435i/). We use [FastLIO](https://github.com/hku-mars/FAST_LIO) to provide localization information. All the code is deployed in Docker on the Jetson AGX Orin platform.
+
+## Docker Environment Setup
+
+The Docker development environment supports ARM and AMD platforms separately. The ARM Docker image is built on [jetpack_r35.2.1](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-ml/tags), while the AMD Docker image is built on [pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime](https://hub.docker.com/r/pytorch/pytorch).
+The detailed information is showed in [dockerfile](./docker/README.md)
+
 ### Only for Test
 Todo
 <!-- We tested our code on Windows with `Python 3.8.15`, `Pytorch 1.10.2` with `cuda11.1`, other dependencies are specified in `requirements.txt`.
