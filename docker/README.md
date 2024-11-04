@@ -2,7 +2,7 @@
 
 ## AMD
 ### wvn-base
-This file is similar to the dockerfile of [wild_visual_navigation](https://github.com/leggedrobotics/wild_visual_navigation.git). [pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime](https://hub.docker.com/r/pytorch/pytorch). And we use zsh as our shell environment. The compiled image can be downloaded from [here](https://hub.docker.com/r/markhui/docker-wvn_nvidia). 
+This file is similar to the dockerfile of [wild_visual_navigation](https://github.com/leggedrobotics/wild_visual_navigation.git).But we use [pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime](https://hub.docker.com/r/pytorch/pytorch) as our base image, which makes it more convenient. And we use zsh as our shell environment. The compiled image can be downloaded from [here](https://hub.docker.com/r/markhui/docker-wvn_nvidia). 
 
 ``` bash
 cd docker/AMD/wvn-base
